@@ -1,0 +1,40 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  mat-sidenav {
+    width: 200px;
+  }
+  .mat-sidenav-bgstyle{
+    background-color:#233349 !important;
+    color: #f5f5f5 !important;
+  }
+  .sd-bg-style{
+    background-color:#233349 !important;
+    color: #f5f5f5 !important;
+  }
+
+  header {
+    background-color: #f5f5f5;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+.hd-bg-style{
+  background-color: #ae0700 !important;
+  color: #f5f5f5;
+}
+
+  h1 {
+    margin-left: 16px;
+  }
+  
+  mat-sidenav-content {
+    //  padding: 16px;
+  }
+  
+  .page-right-content-styl{
+    padding-left: 20px;
+    padding-top: 20px;
+  }

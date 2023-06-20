@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <form [formGroup]="newRegistrationForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+        <mat-form-field class="col-6">
+          <mat-label>First Name</mat-label>
+          <input matInput formControlName="firstName" required>
+        </mat-form-field>
+      
+        <mat-form-field class="col-6">
+          <mat-label>middle Name</mat-label>
+          <input matInput formControlName="middleName" required>
+        </mat-form-field>
+      
+        <mat-form-field class="col-6">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" required>
+          </mat-form-field>
+        
+          <mat-form-field class="col-6">
+            <mat-label>Last Name</mat-label>
+            <input matInput formControlName="lastName" required>
+          </mat-form-field>
+    </div>
+        <!-- <button mat-raised-button color="primary" type="submit" [disabled]="newStudentForm.invalid">Add Student</button> -->
+      </form>
+    </div>
