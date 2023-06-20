@@ -1,0 +1,41 @@
+  <mat-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="firstFormGroup">
+      <form [formGroup]="firstFormGroup">
+        <ng-template matStepLabel>Student details</ng-template>
+            <app-candidate></app-candidate>
+        <div>
+          <button class="btn gr" mat-button matStepperNext>Next</button>
+         
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label=" Parents details">
+      <form [formGroup]="secondFormGroup">
+       <app-parent></app-parent>
+        <div>
+          <button class="btn gr" mat-button matStepperPrevious>Back</button> &nbsp;&nbsp;
+              <button class="btn gr" mat-button matStepperNext>Next</button>
+         
+        </div>
+      </form>
+    </mat-step>
+    <mat-step [stepControl]="secondFormGroup" label="Transport detals">
+        <form [formGroup]="secondFormGroup">
+            <app-transport></app-transport>
+          <div>
+            <button class="btn gr" mat-button matStepperPrevious>Back</button> &nbsp;&nbsp;
+                <button class="btn gr" mat-button matStepperNext>Next</button>
+           
+          </div>
+        </form>
+      </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Done</ng-template>
+      <p>You are now done.</p>
+      <div>
+        <button  class="btn gr right" mat-button matStepperPrevious>Back</button> &nbsp;&nbsp;
+        <button class="btn gr" mat-button (click)="stepper.reset()">Reset</button>&nbsp;&nbsp;
+        <button class="btn gr" mat-button (click)="submit()">Submit</button>
+      </div>
+    </mat-step>
+  </mat-stepper>

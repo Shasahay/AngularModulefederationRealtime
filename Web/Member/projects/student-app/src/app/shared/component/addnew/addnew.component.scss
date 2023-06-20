@@ -1,0 +1,20 @@
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+
+  .gr{
+    background-color:#233349 !important;
+    color: #f5f5f5 !important;
+  }
+
+  ::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: #ae0700 !important; 
+ }
+
+ ::ng-deep .mat-step-header .mat-step-icon{
+    background-color: #233349
+ }

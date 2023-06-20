@@ -1,0 +1,26 @@
+<div class="container mt-3">
+<form [formGroup]="newStudentForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+    <mat-form-field class="col-6">
+      <mat-label>First Name</mat-label>
+      <input matInput formControlName="firstName" required>
+    </mat-form-field>
+  
+    <mat-form-field class="col-6">
+      <mat-label>Last Name</mat-label>
+      <input matInput formControlName="lastName" required>
+    </mat-form-field>
+  
+    <mat-form-field class="col-6">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required email>
+    </mat-form-field>
+  
+    <mat-form-field class="col-6">
+      <mat-label>Phone Number</mat-label>
+      <input matInput formControlName="phoneNumber" required>
+    </mat-form-field>
+</div>
+    <!-- <button mat-raised-button color="primary" type="submit" [disabled]="newStudentForm.invalid">Add Student</button> -->
+  </form>
+</div>
